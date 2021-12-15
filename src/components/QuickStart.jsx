@@ -29,7 +29,7 @@ export default function QuickStart({ isServerInfo }) {
   const isInchDex = useMemo(() => (Moralis.Plugins?.oneInch ? true : false), [Moralis.Plugins?.oneInch]);
 
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
+    <div style={{ display: "flex", gap: "5px"}}>
       <section className="hero">
         <div className="hero-center">
           <article className="hero-info">

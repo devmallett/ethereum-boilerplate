@@ -18,7 +18,10 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
-const { Header, Footer } = Layout;
+// import Chipotle from "./components/Chipotle";
+import StartGame  from "components/StartGame";
+import Gallery from "components/Gallery/client/Gallery";
+const { Header} = Layout;
 
 const styles = {
   content: {
@@ -114,31 +117,25 @@ const App = ({ isServerInfo }) => {
             <Route path="/contract">
               <Contract />
             </Route>
+            <Route path="/gallery">
+              <Gallery />
+            </Route>
+            <Route path="/startgame">
+              <StartGame />
+            </Route>
             <Route path="/">
               <Redirect to="/quickstart" />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
             </Route>
+            
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
             </Route>
           </Switch>
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
-        <Text style={{ display: "block" }}>
-          ⭐️ Please star this{" "}
-          <a
-            href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            boilerplate
-          </a>
-          , every star makes us very happy!
-        </Text>
-      </Footer>
     </Layout>
   );
 };

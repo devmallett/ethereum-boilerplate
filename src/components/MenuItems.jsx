@@ -21,7 +21,7 @@ function MenuItems() {
       <Menu.Item key="/quickstart">
         <NavLink to="/quickstart">🚀 Home</NavLink>
       </Menu.Item>
-      {/* <Menu.Item key="/wallet">
+      <Menu.Item key="/wallet">
         <NavLink to="/wallet">👛 Wallet</NavLink>
       </Menu.Item>
       <Menu.Item key="/1inch">
@@ -29,9 +29,15 @@ function MenuItems() {
       </Menu.Item>
       <Menu.Item key="onramp">
         <NavLink to="/onramp">💵 Fiat</NavLink>
-      </Menu.Item> */}
+      </Menu.Item>
       <Menu.Item key="/erc20balance">
         <NavLink to="/erc20balance">💰 Balances</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/startgame">
+        <NavLink to="/startgame">📄 StartGame</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/gallery">
+        <NavLink to="/gallery">🖼 Gallery</NavLink>
       </Menu.Item>
       {/* <Menu.Item key="/erc20transfers">
         <NavLink to="/erc20transfers">💸 Transfers</NavLink>
