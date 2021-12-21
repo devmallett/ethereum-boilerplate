@@ -86,6 +86,7 @@ function CalendarPick() {
             borderRadius: "100px",
             width: "213.03px",
             height: "50px",
+            border: "1px solid #E51C1C",
           }}
         >
           Start

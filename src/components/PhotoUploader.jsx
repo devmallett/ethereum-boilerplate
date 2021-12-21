@@ -131,7 +131,39 @@ export default function PhotoUploader() {
           onSubmit={handleOnSubmit}
         >
           <p>
-            <input style={{ background: "red" }} type="file" name="file" />
+            {/* <input style={{ background: "red" }} type="file" name="file" /> */}
+            <div
+              style={{
+                width: "213.03px",
+                height: "50px",
+                padding: "5px 10px 35px 10px",
+                background: "#E51C1C",
+                border: "1px solid #E51C1C",
+                position: "relative",
+                color: "#fff",
+                // borderRadius: "2px",
+                textAlign: "center",
+                float: "left",
+                cursor: "pointer",
+                borderRadius: "100px",
+              }}
+            >
+              Choose File
+              <input
+                type="file"
+                style={{
+                  position: "absolute",
+                  zIndex: "1000",
+                  opacity: "0",
+                  cursor: "pointer",
+                  right: "0",
+                  top: "0",
+                  height: "100%",
+                  fontSize: "24px",
+                  width: "100%",
+                }}
+              />
+            </div>
           </p>
 
           <img src={imageSrc} alt="this is an uplaod" />
